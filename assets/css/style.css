@@ -1,0 +1,395 @@
+:root {
+    --primary-color: rgb(255, 204, 0);
+    --black-color: rgb(87, 87, 87);
+    --background-color: #ebecf0;    
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.mb-2 {
+    margin-bottom: 40px;
+}
+
+.mb-1 {
+    margin-bottom: 20px;
+}
+
+.mt-2 {
+    margin-top: 40px;
+}
+
+.mt-5 {
+    margin-top: 100px;
+}
+
+.hr-sm {
+    width: 200px;
+    margin: 0 auto;
+    border-width: 2px;
+}
+
+.font-large {
+    font-size: 33px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--primary-color)
+}
+
+/* Main */
+#main {
+    --header-height: 46px;
+}
+
+.open {
+    display: block !important;
+}
+
+#header {
+    width: 100%;
+    background-color: rgb(226 224 219);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+#header .logo {
+    height: var(--header-height);
+    width: var(--header-height);
+}
+
+#nav {
+    display: flex;
+}
+
+#nav .nav-items {
+    margin: 0 auto;
+    transform: translateX(-10%);
+}
+
+#nav a {
+    height: var(--header-height);
+    color: var(--black-color);
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: var(--header-height);
+    padding: 0 20px;
+}
+
+#nav a:hover {
+    cursor: pointer;
+} 
+
+#mobile-menu-btn {
+    width: 46px;
+    color: var(--black-color);
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+#mobile-menu-btn:hover {
+    cursor: pointer;
+}
+
+#header .mobile-menu-icon {
+    line-height: var(--header-height);
+    padding: 0 15px 0 15px;
+}
+
+.button {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--black-color);
+    background-color: var(--primary-color);
+    padding: 20px 28px;
+    display: inline-block;
+}
+
+.gg-play-button {
+    max-width: 180px;
+}
+
+/* Slider */
+.slider {
+    margin-top: var(--header-height);
+    position: relative;
+    height: 41.75vw;
+}
+
+.slider .slider-arrow-left{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slider .slider-arrow-left i,
+.slider .slider-arrow-right i {
+    font-size: 40px;
+}
+
+.slider .slider-arrow-left i:hover,
+.slider .slider-arrow-right i:hover {
+    cursor: pointer;
+}
+
+.slider .slider-arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slider .slider-img {
+    display: none;
+    height: 100%;
+}
+
+.slider .slider-img img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider .slider-button {
+    position: absolute;
+    max-width: 200px;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.slider .slider-button:hover img {
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+#content .content-section {
+    max-width: 800px;
+    width: 80%;
+    padding: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About section */
+#content .about-content {
+    /* margin-top: 25px; */
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#content .about-content {
+    margin-top: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding: 50px;
+}
+
+.about-content .about-image {
+    width: 220px;
+    margin-right: 100px;
+}
+
+.about-content .about-body {
+    width: 400px;
+}
+
+.about-content .about-text {
+    color: gray;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.about-content .about-head {
+    color: gray;
+    font-weight: 200;
+}
+
+/* contact */
+#contact {
+    background-color: rgb(226 224 219);
+}
+
+#contact .contact-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-infor {
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    flex-grow: 2;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-send-button {
+    padding: 8px 15px;
+    color: white;
+    background-color: black;
+    float: right;
+    border: none;
+}
+
+.contact-send-button:hover {
+    background-color: gray;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+/* Footer */
+#footer .footer-img {
+    width: 100vw;
+}
+
+#footer .footer-follow {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-medium {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-brand a {
+    color: var(--black-color);
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.footer-brand i:hover {
+    opacity: 0.5;
+}
+
+.footer-end {
+    display: block;
+    padding-bottom: 50px;
+}
+
+/* The Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }

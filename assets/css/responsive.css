@@ -1,0 +1,81 @@
+/* PC */
+@media (min-width: 1024px) {
+    #header #mobile-menu-btn {
+        display: none;
+    }
+
+    #nav .mobile-menu-nav-item {
+        display: inline-block !important;
+    }
+    
+    #nav {
+        display: flex;
+    }
+
+    #content .about-content {
+        margin-right: 100px;
+    }
+
+    .font-large {
+        font-size: 53px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 741px) and (max-width: 1023px) {
+    #header #mobile-menu-btn {
+        display: none;
+    }
+
+    #nav .mobile-menu-nav-item {
+        display: inline-block !important;
+    }
+
+    #nav {
+        display: flex;
+    }
+
+    .slider .slider-button {
+        max-width: 150px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav .nav-items {
+        transform: translateX(0);
+    }
+
+    #nav .mobile-menu-nav-item {
+        display: none;
+    }
+
+    .slider .slider-button {
+        max-width: 100px;
+    }
+
+    #contact .contact-send-button {
+        width: 100%;
+    }
+
+    .slider .slider-arrow-left i,
+    .slider .slider-arrow-right i {
+        font-size: 20px;
+    }
+
+    .about-content .about-image {
+        margin-right: 0;
+    }
+
+    .slider {
+        height: 50vw;
+    }
+}
